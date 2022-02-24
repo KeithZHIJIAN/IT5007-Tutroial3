@@ -27,8 +27,8 @@ class AddTraveller extends React.Component {
   render() {
     return (
       <form name="AddTraveller" onSubmit={this.handleSubmit}>
-        <input type="text" name="name" placeholder="Name" />
-        <input type="text" name="phone" placeholder="Phone" />
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="phone" placeholder="Phone" required />
         <button>Add</button>
       </form>
     );
@@ -51,7 +51,7 @@ class DeleteTraveller extends React.Component {
   render() {
     return (
       <form name="DeleteTraveller" onSubmit={this.handleSubmit}>
-        <input type="text" id="id" placeholder="Uid" />
+        <input type="text" id="id" placeholder="Uid" required />
         <button>Delete</button>
       </form>
     );
