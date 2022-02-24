@@ -11,7 +11,7 @@ npm uninstall express
 npm install express@4
 ```
 
-### Set up Babel
+### Generally you will need to set up Babel first
 ```
 npm install --save-dev @babel/core@7 @babel/cli@7
 node_modules/.bin/babel --version
@@ -19,7 +19,7 @@ npx babel --version
 npm install --save-dev @babel/preset-react@7
 ```
 
-### Instructions to compile and run
+### Then use these instructions to compile and run
 ```
 npx babel src --presets @babel/react --out-dir public
 npm start
